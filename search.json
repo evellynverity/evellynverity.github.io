@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "writing.html",
+    "href": "writing.html",
+    "title": "Writing",
+    "section": "",
+    "text": "Technical and policy writing on data, credit risk, and financial inclusion.\n\n\n\n\n\n\n“I Can’t Buy a House! My Whole Life is Ruined!”\nStudying the Impact of Drastic Increase in House Prices for Australian Youth\nA microsimulation model projecting lifetime wealth trajectories across birth cohorts (1965, 1985, 1994), quantifying how the COVID-19 housing boom worsened wealth outcomes for younger Australians at retirement. Covers simulation design, model validation against ABS data, and policy implications for fiscal sustainability and wealth inequality.\nKey finding: A median-income young Australian (born 1985) retires with $1.03M in 2024 dollars — compared to $2.02M for their parents’ generation at the same income level. Those locked out of home ownership entirely are projected to require age pension support to cover retirement expenses, a fiscal liability that scales with the share of the population permanently priced out of the market.\n📄 Download PDF\n\n\n\n\n\n\n\n\n\nWhat the Data Says When Country Listens\nPatterns of Priority and Engagement Among Indigenous Australian Voters\nA two-layer analysis of the 2025 Indigenous Voters Study, using association-rule mining (Apriori) and comparative decision-tree classification to surface what this community believes and what predicts whether they feel democracy is working for them — in the first federal election after the defeat of the 2023 Voice referendum.\nLayer 1 — What matters? Association rules reveal that Indigenous-policy concerns travel with structural, progressive framing rather than individual framing. Welfare dependence appears in only 1 of 48 top rules; land rights and self-determination appear in 16 and 12. The Voice=No subset produced no rules clearing the support threshold — suggesting no unified opposing constituency.\nLayer 2 — What separates engaged from disengaged? Across four decision trees (political choices, demographics, party-issue alignment, issue positions), political engagement and vote choice dominate all other predictors of democratic satisfaction (accuracy 0.63 vs 0.51 for issue positions). A government that delivers excellent Indigenous policy while failing to engage Indigenous voters in the political process will not see democratic satisfaction improve.\n📄 Download PDF\n\n\n\nMore writing samples coming soon."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Evellyn Verity Mesak",
+    "section": "",
+    "text": "Senior data and analytics professional with 8+ years in Indonesian banking, combining deep credit-risk and regulatory expertise with hands-on machine learning. Currently completing a Master of Applied Data Analytics at ANU (July 2026).\nOpen to senior analytics, decision science, and credit-risk roles in Indonesian fintech and banking, and remote positions globally."
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "Evellyn Verity Mesak",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\nThe Transparency Tax: Credit Scoring as a Human Decision System\nMulticlass credit scoring on 100,000 real applications. Dual scorecard design (application vs behavioural), four-model comparison with hyperparameter tuning, SHAP analysis, and a quantified discussion of the accuracy–explainability trade-off in OJK-regulated lending.\nPython · XGBoost · SHAP · WOE/IV · scikit-learn · Credit Risk"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Evellyn Verity Mesak",
+    "section": "Contact",
+    "text": "Contact\nLinkedIn · GitHub · Email"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "The Transparency Tax: Credit Scoring as a Human Decision System\nPython · XGBoost · SHAP · WOE/IV · scikit-learn · Credit Risk · OJK Regulatory Framing\nView on GitHub Open in nbviewer\nCredit scoring is a decision point that shapes human lives — yet most portfolio projects treat it as a pure accuracy exercise. This project asks a different question: what is the measurable cost of building a model that is transparent enough to actually deploy in a regulated bank?\nThe core finding: Two scorecards were built — application (demographics only, for fresh applicants) and behavioural (adds payment history once a relationship exists). All four models were trained on both:\n\n\n\nModel\nApplication\nBehavioural\nGap\n\n\n\n\nLogistic Regression (transparent)\n0.45\n0.64\n+0.197\n\n\nDecision Tree\n0.61\n0.71\n+0.102\n\n\nRandom Forest\n0.70\n0.76\n+0.063\n\n\nXGBoost (opaque)\n0.76\n0.79\n+0.032\n\n\n\nXGBoost barely needs behavioural data because it recovers signal through non-linear interactions. Logistic regression is starved without it — not because it is a weak model, but because it cannot see what XGBoost infers. That gap is the transparency tax.\nAlso covers: defensive data cleaning pipeline · dual scorecard feature split · RandomizedSearchCV hyperparameter tuning · SHAP analysis and a concrete demonstration of three ways it fails as a substitute for genuine transparency · implications for financial inclusion in Indonesia.\n\n\n\nMore projects coming: customer segmentation + A/B testing, deep ML from scratch."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
