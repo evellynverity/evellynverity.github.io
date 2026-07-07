@@ -198,6 +198,77 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong><span style="font-size:1.3em; color:black;">The Background Problem: Topic Modelling 21,000 Consumer Complaints</span></strong></p>
+<p><span style="font-size:0.9em; color:grey;">Python · NumPy · EM Algorithm · Gaussian Mixture Model · TF-IDF · NLP · Unsupervised Learning</span></p>
+<p><a href="https://github.com/evellynverity/GMM-for-complaints" class="btn btn-primary">View on GitHub</a> <a href="https://nbviewer.org/github/evellynverity/GMM-for-complaints/blob/main/GMM_Complaints.ipynb" class="btn btn-outline-secondary">Open in nbviewer</a></p>
+<p>Banks route complaints by product taxonomy. But customers describe what happened to them, not which product it happened on — a fraudulent charge and a rewards dispute are both tagged “Credit card” but belong to different teams with different regulatory clocks. This project asks whether the complaint text itself can define better routing, without using any labels during training.</p>
+<p><strong>The core finding:</strong> The industry-standard pipeline — TF-IDF → truncated SVD → Gaussian mixture model — converges cleanly but fails informatively: seven of eight clusters open with the same four words. The diagnosis is structural: GMM has no mechanism to separate corpus-wide filler words from topic signal. A custom mixture-of-multinomials with an explicit background distribution θ, derived and implemented from scratch in NumPy, fixed this without any hand-curated stopword list. The eight discovered topics came out immediately distinct:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 27%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Topic</th>
+<th>Top signal</th>
+<th style="text-align: center;">Share</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Everyday banking &amp; deposits</td>
+<td>check, deposit, fund, branch</td>
+<td style="text-align: center;">22.7%</td>
+</tr>
+<tr class="even">
+<td>Loan servicing &amp; payments</td>
+<td>payment, mortgage, interest, late</td>
+<td style="text-align: center;">17.6%</td>
+</tr>
+<tr class="odd">
+<td>Credit reporting disputes</td>
+<td>report, inquiry, remove, score</td>
+<td style="text-align: center;">14.1%</td>
+</tr>
+<tr class="even">
+<td>Communication failures</td>
+<td>letter, contact, email, phone</td>
+<td style="text-align: center;">11.1%</td>
+</tr>
+<tr class="odd">
+<td>Merchant transaction disputes</td>
+<td>dispute, purchase, refund, merchant</td>
+<td style="text-align: center;">10.0%</td>
+</tr>
+<tr class="even">
+<td>Fraud &amp; unauthorised transactions</td>
+<td>fraud, claim, debit, police</td>
+<td style="text-align: center;">9.7%</td>
+</tr>
+<tr class="odd">
+<td>Mortgage distress &amp; legal</td>
+<td>property, foreclosure, attorney</td>
+<td style="text-align: center;">8.9%</td>
+</tr>
+<tr class="even">
+<td>Rewards &amp; promotions</td>
+<td>offer, point, bonus, reward</td>
+<td style="text-align: center;">5.9%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Also covers:</strong> full EM derivation with M-step updates · validation against held-out product taxonomy · soft assignments that measure genuinely multi-faceted complaints · honest discussion of where both models fail.</p>
+</div>
+</div>
+</div>
 <p><em>More projects coming: customer segmentation + A/B testing, deep ML from scratch.</em></p>
 
 
@@ -276,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/evellynverity\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
