@@ -18,7 +18,7 @@
     "href": "index.html#featured-projects",
     "title": "Evellyn Verity Mesak",
     "section": "Featured Projects",
-    "text": "Featured Projects\n\nThe Transparency Tax: Credit Scoring as a Human Decision System\nMulticlass credit scoring on 100,000 real applications. Dual scorecard design (application vs behavioural), four-model comparison with hyperparameter tuning, SHAP analysis, and a quantified discussion of the accuracy–explainability trade-off in OJK-regulated lending.\nPython · XGBoost · SHAP · WOE/IV · scikit-learn · Credit Risk"
+    "text": "Featured Projects\n\n\n\n\n\n\nThe Transparency Tax: Credit Scoring as a Human Decision System\nPython · XGBoost · SHAP · WOE/IV · Credit Risk\nWhat is the measurable cost of building a credit model transparent enough to deploy in a regulated bank? Dual scorecard design on 100,000 applications, four-model comparison, and a quantified accuracy–explainability trade-off. Logistic regression gap vs XGBoost: +0.197 accuracy points — that is the transparency tax.\nView Project GitHub\n\n\n\n\n\n\n\n\n\nThe Background Problem: Topic Modelling 21,000 Consumer Complaints\nPython · NumPy · EM Algorithm · GMM · TF-IDF · NLP\nWhen the industry-standard TF-IDF → SVD → GMM pipeline produces seven clusters opening with the same four words, the problem is structural — not parametric. A custom mixture-of-multinomials with an explicit background distribution, derived and implemented from scratch, produced eight immediately distinct complaint topics with no hand-curated stopword list.\nView Project GitHub"
   },
   {
     "objectID": "index.html#contact",
